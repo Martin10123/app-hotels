@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,100;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+.first__information {
+  background: #00FFFF;
+  width: 100%;
+  height: 22rem;
+ }
+
+.box__information {
+   color: white;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+.box__inputs {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.box__inputs input,
+select {
+  width: 20rem;
+  height: 3.5rem;
+  font-size: 1.3rem;
+  margin: 7px 0px 7px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button.clean span {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 600;
+}
+
+.clean {
+  width: 9rem;
+  height: 3.2rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  background: rgb(1, 107, 168);
+  color: white;
+  font-size: 1.3rem;
+}
+
+.clean:hover {
+  background: rgb(243, 17, 17);
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+form {
+  background: #189ef6;
+  width: 100%;
+}
+
+.btn_mode {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  height: 3.1rem;
+}
+
+.btn_mode button {
+  width: 130px;
+  height: 30px;
+  border: 1px solid rgb(123, 40, 206);
+  border-radius: 61px;
+}
+
+/* Modo Dark */
+
+.dark .first__information {
+  background-color: #25282b
+}
+
+.dark form {
+  background-color: #242526
+}
+
+.dark h2,
+.dark p {
+  color: #fff
+}
+
+@media screen and (min-width: 1200px) {
+  .box__information {
+      align-items: flex-start;
+      padding-left: 10rem;
+  }
+  
+  form {
+    height: 6rem;
+  }
+
+  .btn_mode {
+    width: 95%;
+    position: fixed;
+    bottom: 35px;
+  }
+  
+  .btn_mode button {
+    width: 148px;
+    height: 45px;
+    border: 1px solid rgb(123, 40, 206);
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    background-color:rgb(104, 184, 231)
+  }
+}

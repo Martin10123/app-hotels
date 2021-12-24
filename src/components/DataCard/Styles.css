@@ -1,0 +1,219 @@
+main {
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+article {
+    max-width: 24rem;
+    box-shadow: 0px 0px 8px grey;
+    margin-bottom: 25px;
+    border-radius: 5px;
+}
+
+.inside__article {
+    padding: 1rem;
+}
+
+figure,
+img {
+    width: 100%;
+}
+
+div.inside__article > h2 {
+    margin: 25px 0px 12px;
+    font-size: 1.8rem;
+}
+
+.date__reserve {
+    display: flex;
+    flex-direction: column;
+}
+
+div.date__reserve span {
+    background: #189ef6;
+    color: white;
+    margin: 4px 0;
+    padding-left: 13px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.box__description {
+    margin-bottom: 1.5rem;
+    overflow: auto;
+    width: 100%;
+    height: 4.5rem;
+}
+
+.box__description p {
+    font-size: 17px;
+}
+
+.box__description::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+.box__description::-webkit-scrollbar-thumb {
+    background: #61dafb;
+    border-radius: 5px
+}
+
+.country {
+    height: 3rem;
+    box-shadow: 0px 0px 8px grey;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+.rooms__zone {
+  width: 93%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rooms {
+    width: 100%;
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    box-shadow: 0px 0px 8px grey;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+span.span__icons {
+    width: 4rem;
+    height: 100%;
+}
+
+span.span__icons i {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    background: rgb(1, 107, 168);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.span__icons + p {
+    margin-left: 1.4rem;
+    font-weight: 600;
+}
+
+.sign {
+    width: 13rem;
+    margin-bottom: 1.5rem;
+    height: 3rem;
+    background: rgb(72, 188, 241);
+    border-radius: 0.5rem;
+}
+
+.container__sing {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.color__white {
+    color: white;
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 7px;
+}
+.color__gray {
+    color: gray;
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.reserve {
+    width: 100%;
+    height: 4rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #00FFFF;
+    cursor: pointer;
+}
+
+.reserve:hover {
+    background: rgb(1, 107, 168);
+}
+
+button.reserve span {
+    font-size: 1.3rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Error {
+    width: 100%;
+    height: 500px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.div__error {
+    width: 50%;
+    height: 60%;
+    background: #ef5757;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+}
+
+div.div__error h1 {
+    color: white;
+}
+
+.iconError {
+    font-size: 36px;
+    color: #082344;
+    margin-right: 12px;
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    main {
+        justify-content: space-between;
+    }
+
+    article {
+      max-width: 30rem;
+      margin: 70px;
+    }
+  
+    .rooms__zone {
+      flex-wrap: nowrap;
+    } 
+  
+    .rooms {
+      width: 16rem;
+    }
+  
+    .sign {
+      width: 8.4rem;
+    }
+  }
